@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.tatal {
+    width: 400px;
+    margin: auto;
+    border: none;
+    position: relative;
+    top: 120px;
+}
+
+.tatal h2 {
+    text-align: center;
+    font-size: 45px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.tatal h2 span {
+    color: rgb(187, 7, 7);
+    font-style: italic ;
+}
+
+.tatal .underlin {
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.tatal .button {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.button button::before {
+    position: relative;
+    left: 0px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 10px;
+    transition: 0.4s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.button button:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.tatal .button button {
+    margin: 0px 10px;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(189, 146, 121);
+    background-color: white;
+    border-color: rgb(85, 85, 85);
+}
+
+.menu-foto {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 160px;
+    display: flex;
+}
+
+@media screen and (max-width: 1500px){
+    .menu-foto {
+        display: block;
+    }
+}
+
+.menu-foto-left {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 1500px){
+    .menu-foto-left {
+        width: 100%;
+    }
+}
+
+.text {
+    margin-top: 15px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1500px){
+    .text {
+        display: block;
+    }
+}
+
+.image-right {
+    margin-left: 10px;
+}
+
+.text h3 {
+     font-family: sans-serif;
+     font-weight: 300;
+}
+
+.text h3 span {
+    margin-left: 10px;
+    color: rgb(184, 165, 0);
+}
+
+.text .line {
+   width: 300px;
+   height: 1px;
+   background-color: rgb(139, 134, 134);
+   margin-top: 4px;
+}
+
+.text p {
+    margin-top: 20px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+@media screen and (max-width: 1500px){
+    .text p {
+        margin-top: 5px;
+    }
+}
+
+.text img {
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    object-fit: contain;
+    border: 4px solid rgb(128, 126, 126);
+    border-radius: 3px;
+}
+
+
+@media screen and (max-width: 1500px){
+    .text img {
+        width: 700px;
+        height: 350px;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .text img {
+        width: 300px;
+        height: 150px;
+        margin: auto;
+    }
+}
+
+/* 2-lunch */
+
+.big-contener-first .big-contener-second{
+    display: none;
+}
+
+/* 3-Shaks*/ 
+
+.big-contener-first .big-contener-thorde {
+    display: none;
+}
